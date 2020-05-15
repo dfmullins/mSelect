@@ -1,0 +1,233 @@
+/*
+* mSelect developed by Damion Mullins
+*/
+
+._mSelect_container {
+    border: solid 1px #999;
+    border-radius: 5px;
+    display: table;
+    padding: 5px;
+    position: relative;
+    white-space: nowrap;
+    font-family: none;
+}
+
+._mSelect_container table {
+    width: 100%;
+}
+
+._mSlect_input_container {
+    border: solid 1px #999;
+    display: inherit;
+    border-radius: 5px;
+}
+
+._mSelect_input {
+    margin: 5px 0;
+    padding: 0 5px 0 7px;
+    height: 30px;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #111;
+    font-size: inherit;
+    font-family: sans-serif;
+    line-height: normal;
+    border-radius: 0;
+    min-width: 250px;
+    border: none;
+}
+
+._mSelect_text_highlight {
+    background-color: yellow;
+    text-decoration: underline;
+    color: #111;
+}
+
+._mSelect_expContBtn {
+    border: none;
+    padding: 1px 5px 3px 5px;
+}
+
+._mSelect_selected_container, ._mSelect_selected_table,
+._mSelect_options_table {
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+._mSelect_options_container {
+    height: 1px;
+    font-size: 13px;
+    font-family: sans-serif;
+    position: absolute;
+    padding: 0 5px 5px 5px;
+    border: solid 1px #999;
+    border-top: none;
+    background-color: #fff;
+    opacity: 0;
+    left: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 2;
+}
+
+._mSelect_selected_container {
+    top: -7px;
+    position: relative;
+}
+
+._mSelect_options_container table {
+    border-collapse: collapse;
+    display: none;
+    width: 100%;
+}
+
+._mSelect_selected_container table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+._mSelect_options_table_table, ._mSelect_selected_table_table {
+    overflow:auto;
+}
+
+._mSelect_selected_controls, ._mSelect_options_controls {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+._mSelect_no_selectAllCtrl {
+    border-bottom: solid 2px #dfdfdf;
+}
+
+._mSelect_section_label {
+    color: #111;
+    border-bottom: solid 2px #dfdfdf;
+    text-align: left;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+._mSelect_control_td {
+    color: #999;
+    text-align: center;
+    border-bottom: solid 2px #dfdfdf;
+    width: 33%;
+    white-space: nowrap;
+}
+
+._mSelect_icons {
+    font-size: 24px;
+}
+
+._mSelect_control_td:hover {
+    color: #111;
+    border-bottom: solid 2px #82CAFA;
+}
+
+._mSelect_is_disabled a {
+    color: #999 !important;
+}
+
+._mSelect_selected_table td:not(._mSelect_is_disabled), 
+._mSelect_options_table td:not(._mSelect_is_disabled) {
+     color: #111;
+     padding: 4px 5px 2px 5px;
+     cursor: pointer;
+     border-radius: 5px;
+}
+
+._mSelect_optGroup {
+    background-color: #fff !important;
+    color: #111 !important;
+    cursor: default !important;
+    border-radius: 0 !important;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+._mSelect_optionIndent {
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+._mSelect_optGroup:hover {
+    background-color: #fff !important;
+    color: #111 !important;
+    cursor: default !important;
+    border-radius: 0 !important;
+}
+
+._mSelect_selected_table td:not(._mSelect_is_disabled):hover, 
+._mSelect_options_table td:not(._mSelect_is_disabled):hover {
+    background-color: #6699cc;
+    color: #fff;
+}
+
+._mSelect_selected_table td:not(._mSelect_is_disabled):hover a, 
+._mSelect_options_table td:not(._mSelect_is_disabled):hover a{
+    color: #fff;
+}
+
+._mSelect_selected_table td a, ._mSelect_options_table td a {
+    color: #111;
+    text-decoration: none;
+}
+
+._mSelect_selected_table td a:after {
+    content: '\00d7';
+    float: right;
+    font-size: 18px;
+    color: #fff;
+}
+
+._mSelect_options_table td a:after {
+    content: '\2713';
+    float: right;
+    font-size: 18px;
+    color: #fff;
+}
+
+._mSelect_selected_table td a:hover, ._mSelect_options_table td a:hover {
+    color: #fff; 
+    text-decoration: none; 
+}
+
+._mSelect_selected_controls td a, ._mSelect_options_controls td a, ._mSelect_expContBtn a {
+    color: #999;
+    text-decoration: none;
+}
+
+._mSelect_selected_controls td a:hover, ._mSelect_options_controls td a:hover {
+    color: #666; 
+}
+
+._mSelect_hide_orignal_select {
+    visibility: hidden;
+    color: transparent;
+    background-color: transparent;
+    opacity: 0;
+    position: absolute;
+    display: none;
+}
+
+._mSelect_lightBoxOverlay {
+    display: block; 
+    position: fixed; 
+    top: 0%; 
+    left: 0%; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #444; 
+    z-index: 999998; 
+    opacity: .5;    
+}
+
+
+
+
+
+
+
+
+
